@@ -1,0 +1,14 @@
+{
+  "script_id": "script_06",
+  "conversation_id": "conv-006",
+  "customer_name": "Amir Hassan",
+  "customer_phone": "+1-905-555-0738",
+  "line_of_business": "auto",
+  "policy_id": "POL-5512",
+  "initial_activity": "Billing inquiry",
+  "messages": [
+    "Hi, quick question — when is my next insurance payment due? I want to make sure I have funds in the account.",
+    "Also, we just closed on our new house last week so things have been really hectic with the move and everything.",
+    "Perfect, thanks. That's all I needed."
+  ]
+}

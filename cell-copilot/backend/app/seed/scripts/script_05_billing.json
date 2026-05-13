@@ -1,0 +1,15 @@
+{
+  "script_id": "script_05",
+  "conversation_id": "conv-005",
+  "customer_name": "Jordan Lee",
+  "customer_phone": "+1-647-555-0419",
+  "line_of_business": "billing",
+  "policy_id": "POL-3301",
+  "initial_activity": "Billing inquiry",
+  "messages": [
+    "Hey, I just got a payment failure notification. My insurance payment didn't go through this month.",
+    "Oh, I think my card expired. How do I update it?",
+    "Done, I just updated the card in the portal. It went through successfully.",
+    "Great, thanks for the help. Good to know it's sorted."
+  ]
+}

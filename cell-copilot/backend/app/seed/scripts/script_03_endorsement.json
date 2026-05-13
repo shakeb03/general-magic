@@ -1,0 +1,14 @@
+{
+  "script_id": "script_03",
+  "conversation_id": "conv-003",
+  "customer_name": "Rachel Park",
+  "customer_phone": "+1-416-555-0284",
+  "line_of_business": "home",
+  "policy_id": null,
+  "initial_activity": "Endorsement request",
+  "messages": [
+    "Hi, we just finished our basement — it's fully finished now with a rec room and a bathroom. I need to update my home policy to reflect that.",
+    "It's about 800 square feet. We had a licensed contractor do all the work — plumbing and electrical are fully to code, permits were pulled.",
+    "That sounds fair. Can you draft the endorsement so I can review the premium change?"
+  ]
+}

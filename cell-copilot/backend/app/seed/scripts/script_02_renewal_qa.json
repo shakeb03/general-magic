@@ -1,0 +1,15 @@
+{
+  "script_id": "script_02",
+  "conversation_id": "conv-002",
+  "customer_name": "Sarah Mitchell",
+  "customer_phone": "+1-905-555-0347",
+  "line_of_business": "home",
+  "policy_id": "POL-4421",
+  "initial_activity": "Renewal inquiry",
+  "messages": [
+    "Hi, I just got my home insurance renewal notice and my premium went up 18% to $1,847. That seems really high — can you explain what happened?",
+    "Okay, the regional hail data makes sense I guess. But 18% is still a lot. What are my options here?",
+    "Tell me more about the deductible option. What would my premium be if I moved to a $2,000 deductible?",
+    "Alright, I'll accept the renewal as-is for now. Can you confirm it's locked in?"
+  ]
+}

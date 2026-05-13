@@ -1,0 +1,14 @@
+{
+  "script_id": "script_04",
+  "conversation_id": "conv-004",
+  "customer_name": "Marcus Williams",
+  "customer_phone": "+1-437-555-0561",
+  "line_of_business": "auto",
+  "policy_id": "POL-2211",
+  "initial_activity": "Claims intake",
+  "messages": [
+    "Hi, I was in a small accident this morning and I need to report it.",
+    "The other driver ran a red light and hit my front bumper. My car starts but there's visible damage and the hood doesn't close properly.",
+    "Look, my car is undriveable and I have a really important meeting in an hour. I've been waiting 20 minutes already. Can you just help me get a rental sorted out RIGHT NOW??"
+  ]
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "POL-1001",
+    "customer_name": "David Chen",
+    "type": "auto",
+    "carrier": "Intact",
+    "premium": 1420,
+    "details": {
+      "vehicle": "2021 Toyota Camry",
+      "vin": null,
+      "coverage": "Comprehensive + Collision",
+      "deductible": 500,
+      "renewal_date": "2026-09-15",
+      "drivers": [{"name": "David Chen", "age": 34, "licence": "G"}]
+    }
+  },
+  {
+    "id": "POL-4421",
+    "customer_name": "Sarah Mitchell",
+    "type": "home",
+    "carrier": "Aviva",
+    "premium": 1847,
+    "details": {
+      "address": "142 Birchwood Drive, Oakville, ON L6H 3K2",
+      "dwelling_value": 780000,
+      "contents_value": 120000,
+      "deductible": 1000,
+      "renewal_date": "2026-06-01",
+      "loss_ratio_note": "Regional hail claims up 22% YoY. Aviva applied industry-wide surcharge of 12%. Inflation adjustment adds remaining 6%.",
+      "prior_claims": []
+    }
+  },
+  {
+    "id": "POL-2211",
+    "customer_name": "Marcus Williams",
+    "type": "auto",
+    "carrier": "Wawanesa",
+    "premium": 1650,
+    "details": {
+      "vehicle": "2019 Honda Civic",
+      "vin": "2HGFC2F59KH123456",
+      "coverage": "Comprehensive + Collision + Accident Forgiveness",
+      "deductible": 500,
+      "renewal_date": "2026-11-20",
+      "drivers": [{"name": "Marcus Williams", "age": 28, "licence": "G"}]
+    }
+  },
+  {
+    "id": "POL-3301",
+    "customer_name": "Jordan Lee",
+    "type": "auto",
+    "carrier": "Economical",
+    "premium": 892,
+    "details": {
+      "vehicle": "2018 Mazda3",
+      "vin": "JM1BN1V76J1234567",
+      "coverage": "Liability Only",
+      "deductible": 1000,
+      "renewal_date": "2026-08-10",
+      "billing": {
+        "payment_method": "Visa ending 4821",
+        "card_expiry": "11/2025",
+        "status": "PAYMENT_FAILED",
+        "next_due": "2026-06-01",
+        "amount_due": 74.33
+      }
+    }
+  },
+  {
+    "id": "POL-5512",
+    "customer_name": "Amir Hassan",
+    "type": "auto",
+    "carrier": "Economical",
+    "premium": 1310,
+    "details": {
+      "vehicle": "2022 Hyundai Elantra",
+      "vin": "KMHLL4AG3NU123456",
+      "coverage": "Comprehensive + Collision",
+      "deductible": 500,
+      "renewal_date": "2026-10-05",
+      "billing": {
+        "payment_method": "Mastercard ending 7293",
+        "next_due": "2026-06-15",
+        "amount_due": 109.17
+      }
+    }
+  }
+]

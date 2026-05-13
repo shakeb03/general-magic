@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* General Magic-inspired palette */
+    --background: 38 33% 96%;       /* #F9F5EE cream */
+    --foreground: 20 8% 10%;        /* #1A1817 near-black */
+    --card: 38 33% 98%;             /* #FDFAF6 almost white */
+    --card-foreground: 20 8% 10%;
+    --popover: 38 33% 98%;
+    --popover-foreground: 20 8% 10%;
+    --primary: 8 78% 57%;           /* #E84B3A coral */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 36 20% 92%;        /* #EDE8DF warm gray */
+    --secondary-foreground: 20 8% 25%;
+    --muted: 36 20% 92%;
+    --muted-foreground: 25 10% 50%;
+    --accent: 36 20% 88%;
+    --accent-foreground: 20 8% 15%;
+    --destructive: 8 78% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 34 18% 86%;           /* #E2DBD0 warm border */
+    --input: 34 18% 86%;
+    --ring: 8 78% 57%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .font-serif-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgb(200 192 180);
+    border-radius: 2px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgb(170 160 145);
+  }
+
+  /* Message bubbles — light theme */
+  .message-bubble-agent {
+    background: #FFF8F6;
+    border: 1px solid #F5C9C2;
+    color: #3D1410;
+  }
+
+  .message-bubble-broker {
+    background: #E84B3A;
+    border: none;
+    color: #ffffff;
+  }
+
+  .message-bubble-customer {
+    background: #ffffff;
+    border: 1px solid #E2DBD0;
+    color: #1A1817;
+  }
+
+  /* Cream panel backgrounds */
+  .panel-cream {
+    background: #F9F5EE;
+  }
+
+  .panel-white {
+    background: #FFFFFF;
+  }
+
+  /* Urgency row tints */
+  .row-urgent {
+    background: #FFF5F4;
+    border-left: 3px solid #E84B3A;
+  }
+
+  .row-flagged {
+    background: #FFFDF4;
+    border-left: 3px solid #F0A000;
+  }
+}

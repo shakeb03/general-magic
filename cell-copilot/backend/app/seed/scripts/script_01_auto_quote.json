@@ -1,0 +1,16 @@
+{
+  "script_id": "script_01",
+  "conversation_id": "conv-001",
+  "customer_name": "David Chen",
+  "customer_phone": "+1-647-555-0192",
+  "line_of_business": "auto",
+  "policy_id": null,
+  "initial_activity": "New quote request",
+  "messages": [
+    "Hi, I'd like to get a quote for auto insurance. First time insuring on my own.",
+    "I'm 34 years old, full G licence. The car is a 2021 Toyota Camry XSE.",
+    "The VIN is 2T1BURHE0JC123456. It's currently parked in Mississauga, L5B 2C5.",
+    "No accidents or tickets in the last 6 years. I'd like comprehensive and collision coverage.",
+    "Those all sound reasonable. What are my best options from the carriers you work with?"
+  ]
+}
