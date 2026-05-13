@@ -1,6 +1,6 @@
 "use client";
 
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import type { AMSActivity } from "@/lib/api";
 import { cn } from "@/lib/utils";
 
@@ -111,6 +111,9 @@ function QuotePayload({ payload }: { payload: Record<string, unknown> }) {
 
 function ClaimPayload({ payload }: { payload: Record<string, unknown> }) {
   const details = payload.claim_details as Record<string, unknown> ?? {};
+  const rentalNeeded = Boolean(details.rental_needed);
+  const description =
+    typeof details.description === "string" ? details.description : "";
   return (
     <div className="space-y-1">
       <KVRow label="Claim Number" value={
@@ -127,15 +130,15 @@ function ClaimPayload({ payload }: { payload: Record<string, unknown> }) {
       <KVRow label="Incident Type" value={details.incident_type as string ?? "—"} />
       <KVRow label="Incident Date" value={details.incident_date as string ?? "—"} />
       <KVRow label="Adjuster" value={payload.adjuster_assigned as string ?? "TBD"} />
-      {details.rental_needed && (
+      {rentalNeeded && (
         <KVRow label="Rental" value={
           <span className="text-emerald-700 font-medium">Requested</span>
         } />
       )}
-      {details.description && (
+      {description && (
         <div className="mt-2 pt-2 border-t border-cream-200">
           <p className="text-[10px] text-warm-700 font-medium uppercase tracking-widest mb-1">Description</p>
-          <p className="text-xs text-warm-800 leading-relaxed">{details.description as string}</p>
+          <p className="text-xs text-warm-800 leading-relaxed">{description}</p>
         </div>
       )}
     </div>
@@ -144,6 +147,8 @@ function ClaimPayload({ payload }: { payload: Record<string, unknown> }) {
 
 function EndorsementPayload({ payload }: { payload: Record<string, unknown> }) {
   const changes = payload.changes as Record<string, unknown> ?? {};
+  const changeDescription =
+    typeof changes.description === "string" ? changes.description : "";
   return (
     <div className="space-y-1">
       <KVRow label="Policy" value={payload.policy_id as string} />
@@ -158,10 +163,10 @@ function EndorsementPayload({ payload }: { payload: Record<string, unknown> }) {
           +${payload.premium_impact_monthly as number ?? changes.premium_impact_monthly as number ?? 0}/mo
         </span>
       } />
-      {changes.description && (
+      {changeDescription && (
         <div className="mt-2 pt-2 border-t border-cream-200">
           <p className="text-[10px] text-warm-700 font-medium uppercase tracking-widest mb-1">Changes</p>
-          <p className="text-xs text-warm-800 leading-relaxed">{changes.description as string}</p>
+          <p className="text-xs text-warm-800 leading-relaxed">{changeDescription}</p>
         </div>
       )}
     </div>
